@@ -3,84 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>P4 中文 - 引號破折號 溫習站</title>
+<title>P4 中文溫習站 - 孟子・句型・標點・不供詞</title>
 <style>
 body{font-family:"Noto Sans TC",system-ui,sans-serif;background:#FFF9E6;margin:0;padding:24px 16px 40px;color:#333}
-h1{font-size:30px;text-align:center;margin:16px 0 8px;line-height:1.3}
-.sub{text-align:center;color:#888;margin-bottom:24px}
-.card{max-width:780px;margin:20px auto;background:white;border-radius:18px;padding:22px 24px;box-shadow:0 6px 24px rgba(0,0,0,0.07);border:1px solid #f2e8c9}
-.card h2{margin:0 0 12px;font-size:20px}
-.card h3{margin:0 0 10px;font-size:18px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
-@media(max-width:600px){.grid{grid-template-columns:1fr}}
-.item{border:1px solid #eee;border-radius:14px;padding:14px 14px;background:#FFFEFB;transition:all .15s}
+h1{font-size:28px;text-align:center;margin:16px 0 6px;line-height:1.3}
+.sub{text-align:center;color:#888;margin-bottom:28px;font-size:14px}
+.card{max-width:860px;margin:22px auto;background:white;border-radius:18px;padding:22px 24px;box-shadow:0 6px 24px rgba(0,0,0,0.07);border:1px solid #f2e8c9}
+.card h2{margin:0 0 4px;font-size:19px}
+.card .desc{margin:0 0 14px;font-size:13px;color:#888}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+.item{border:1px solid #eee;border-radius:14px;padding:14px;background:#FFFEFB;display:flex;flex-direction:column;justify-content:space-between;transition:.15s}
 .item:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,0.06)}
-.item .tag{display:inline-block;font-size:12px;padding:3px 8px;border-radius:20px;margin-bottom:8px;font-weight:bold}
-.tag.note{background:#E8F5E9;color:#2E7D32}
-.tag.p4{background:#E3F2FD;color:#1565C0}
-.tag.mark{background:#FFF3E0;color:#EF6C00}
-.tag.quiz{background:#FCE4EC;color:#C2185B}
-.item strong{display:block;font-size:16px;margin-bottom:4px}
-.item p{margin:0 0 10px;font-size:13px;color:#666;line-height:1.5}
-a.btn{display:inline-block;padding:9px 16px;background:#4A90E2;color:white;text-decoration:none;border-radius:10px;font-weight:bold;font-size:14px}
-a.btn.quiz{background:#FF7043}
-a.btn.mark{background:#FF9800}
-a.btn.p4{background:#42A5F5}
-a.btn.note{background:#66BB6A}
-small{color:#888}
-code{background:#f6f1de;padding:2px 6px;border-radius:6px;font-size:13px}
-.list{display:flex;flex-direction:column;gap:0}
-.list a{padding:8px 0;border-bottom:1px dashed #eee;text-decoration:none;color:#4A90E2}
+.tag{display:inline-block;font-size:11px;padding:3px 8px;border-radius:20px;margin-bottom:8px;font-weight:bold}
+.tag.mengzi{background:#E3F2FD;color:#0D47A1}
+.tag.quiz-m{background:#E8F5E9;color:#1B5E20}
+.tag.juxing{background:#FFF3E0;color:#E65100}
+.tag.biaodian{background:#F3E5F5;color:#6A1B9A}
+.tag.bugong{background:#E0F2F1;color:#004D40}
+.item strong{font-size:15px;margin-bottom:4px;word-break:break-all}
+.item p{margin:0 0 12px;font-size:12.5px;color:#666;line-height:1.5}
+a.btn{display:inline-block;padding:9px 16px;color:white;text-decoration:none;border-radius:10px;font-weight:bold;font-size:13px;text-align:center}
+.btn.mengzi{background:#42A5F5}
+.btn.quiz-m{background:#66BB6A}
+.btn.juxing{background:#FF9800}
+.btn.biaodian{background:#BA68C8}
+.btn.bugong{background:#26A69A}
+.section{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start;margin-bottom:20px}
+@media(max-width:700px){.section{grid-template-columns:1fr}}
+.section-label{font-weight:bold;font-size:14px;padding-top:6px}
+.section-label span{display:block;font-size:12px;color:#aaa;font-weight:normal;margin-top:2px}
 </style>
 </head>
 <body>
-<h1>📚 P4 中文急救包：引號 vs 破折號</h1>
-<p class="sub">香港小學 P4 中文專用｜傳統中文｜手機都睇到</p>
+<h1>📚 P4 中文溫習總站</h1>
+<p class="sub">香港小學 P4 專用｜傳統中文｜一撳即開｜手機都得</p>
 <div class="card">
-<h2>👋 你好！呢度係你嘅溫習總站</h2>
-<p>而家資料夾入面有 <strong>4 份</strong> 單檔 HTML 教材，全部撳入去即用，唔使安裝：</p>
-<div class="grid">
-  <div class="item">
-    <span class="tag p4">孟子</span>
-    <strong>P4.html</strong>
-    <p>完整版主頁 / 總溫習，包含重點整理</p>
-    <a class="btn p4" href="P4.html">📖 開啟 P4.html</a>
+  <div class="section">
+    <div class="section-label">📖 孟子<br><span>Mengzi</span></div>
+    <div class="grid">
+      <div class="item">
+        <div>
+          <span class="tag mengzi">課文筆記</span>
+          <strong>P4.html</strong>
+          <p>孟子課文重點 + 溫習筆記</p>
+        </div>
+        <a class="btn mengzi" href="P4.html">📖 開啟 P4.html</a>
+      </div>
+      <div class="item">
+        <div>
+          <span class="tag quiz-m">孟子測驗</span>
+          <strong>quiz.html</strong>
+          <p>孟子小測驗 - 即做即改</p>
+        </div>
+        <a class="btn quiz-m" href="quiz.html">📝 開始測驗</a>
+      </div>
+    </div>
   </div>
-  <div class="item">
-    <span class="tag note">溫習筆記</span>
-    <strong>note.html</strong>
-    <p>圖解引號「」同破折號——嘅用法，易記易明</p>
-    <a class="btn note" href="note.html">📖 開啟筆記</a>
+  <div class="section">
+    <div class="section-label">🔧 句型<br><span>Sentence</span></div>
+    <div class="grid">
+      <div class="item">
+        <div>
+          <span class="tag juxing">句型重點</span>
+          <strong>Focused-Study-Note-Traditional.html</strong>
+          <p>句型結構聚焦筆記（繁中完整版）</p>
+        </div>
+        <a class="btn juxing" href="Focused-Study-Note-Traditional.html">📖 開啟句型筆記</a>
+      </div>
+    </div>
   </div>
-  <div class="item">
-    <span class="tag mark">標點重點</span>
-    <strong>mark.html</strong>
-    <p>專攻標點符號對比，釐清易錯位</p>
-    <a class="btn mark" href="mark.html">🔍 開啟 mark.html</a>
+  <div class="section">
+    <div class="section-label">✏️ 標點<br><span>Punctuation</span></div>
+    <div class="grid">
+      <div class="item">
+        <div>
+          <span class="tag biaodian">標點筆記</span>
+          <strong>note.html</strong>
+          <p>標點符號溫習筆記（圖解）</p>
+        </div>
+        <a class="btn biaodian" href="note.html">📖 開啟 note.html</a>
+      </div>
+      <div class="item">
+        <div>
+          <span class="tag biaodian">標點重點</span>
+          <strong>mark.html</strong>
+          <p>標點對比 + 易錯位</p>
+        </div>
+        <a class="btn biaodian" href="mark.html">🔍 開啟 mark.html</a>
+      </div>
+    </div>
   </div>
-  <div class="item">
-    <span class="tag quiz">互動測驗</span>
-    <strong>quiz.html</strong>
-    <p>10題基礎測驗（無夾引號）- 即做即改</p>
-    <a class="btn quiz" href="quiz.html">📝 開始測驗</a>
+  <div class="section">
+    <div class="section-label">📝 不供詞<br><span>Wordblank</span></div>
+    <div class="grid">
+      <div class="item">
+        <div>
+          <span class="tag bugong">不供詞練習</span>
+          <strong>wordblank.html</strong>
+          <p>不供詞填充練習 - 基礎版</p>
+        </div>
+        <a class="btn bugong" href="wordblank.html">✏️ 開始練習</a>
+      </div>
+      <div class="item">
+        <div>
+          <span class="tag bugong">不供詞練習</span>
+          <strong>wordblank1.html</strong>
+          <p>不供詞填充練習 - 進階版</p>
+        </div>
+        <a class="btn bugong" href="wordblank1.html">✏️ 開始練習2</a>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-<div class="card">
-<h3>🗂️ 全部檔案一覽</h3>
-<p style="font-size:13px;color:#888">如果你之後再上傳新檔案，複製下面呢行格式加落去就得：</p>
-<div class="list">
-  <a href="P4.html">P4.html — 主教材</a>
-  <a href="note.html">note.html — 溫習筆記</a>
-  <a href="mark.html">mark.html — 標點重點</a>
-  <a href="quiz.html">quiz.html — 10題測驗</a>
-  <a href="README.md">README.md — 說明文件</a>
-</div>
-<p style="margin-top:16px"><small>提示：檔名係分大小楷嘅，GitHub 入面係 <code>P4.html</code> 大楷P，所以連結都要用 <code>P4.html</code>，唔係 <code>p4.html</code></small></p>
-</div>
-<div class="card">
-<h3>⚙️ 點樣更新？</h3>
-<p style="font-size:14px;line-height:1.7">1. 上傳新嘅 <code>xxx.html</code> 到呢個 repo<br>2. 返嚟 <code>index.html</code> 撳 Edit，喺 grid 入面加多一個<br><code>&lt;div class="item"&gt;...&lt;a href="xxx.html"&gt;...&lt;/a&gt;&lt;/div&gt;</code><br>3. Commit 儲存即刻生效</p>
+<div class="card" style="background:#FFFEF5">
+<h2 style="font-size:15px">🗂️ 快速連結</h2>
+<ul style="font-size:13px;line-height:2.2;margin:0;padding-left:18px;columns:2">
+  <li><a href="P4.html">P4.html - 孟子</a></li>
+  <li><a href="quiz.html">quiz.html - 孟子 quiz</a></li>
+  <li><a href="Focused-Study-Note-Traditional.html">Focused... - 句型</a></li>
+  <li><a href="note.html">note.html - 標點</a></li>
+  <li><a href="mark.html">mark.html - 標點</a></li>
+  <li><a href="wordblank.html">wordblank.html - 不供詞</a></li>
+  <li><a href="wordblank1.html">wordblank1.html - 不供詞</a></li>
+</ul>
 </div>
 </body>
 </html>
